@@ -28,7 +28,7 @@ HACS serves the card from:
 The custom card type is:
 
 ```yaml
-type: custom:netgear-proav-switch-card-v3
+type: custom:netgear-proav-switch-card
 ```
 
 ### Manual
@@ -45,7 +45,7 @@ type: module
 Single switch:
 
 ```yaml
-type: custom:netgear-proav-switch-card-v3
+type: custom:netgear-proav-switch-card
 name: Core Switch
 width: 100%
 ```
@@ -53,7 +53,7 @@ width: 100%
 Multiple switches:
 
 ```yaml
-type: custom:netgear-proav-switch-card-v3
+type: custom:netgear-proav-switch-card
 switches:
   - name: Core Switch
   - name: AV Switch

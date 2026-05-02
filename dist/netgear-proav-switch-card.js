@@ -102,7 +102,7 @@ const NETGEAR_PROAV_LAYOUTS = {
 
 class NetgearProAvSwitchCard extends HTMLElement {
   static getConfigElement() {
-    return document.createElement("netgear-proav-switch-card-v3-editor");
+    return document.createElement("netgear-proav-switch-card-editor");
   }
 
   static getStubConfig() {
@@ -1802,7 +1802,7 @@ class NetgearProAvSwitchCard extends HTMLElement {
   }
 }
 
-customElements.define("netgear-proav-switch-card-v3", NetgearProAvSwitchCard);
+customElements.define("netgear-proav-switch-card", NetgearProAvSwitchCard);
 
 class NetgearProAvSwitchCardEditor extends HTMLElement {
   setConfig(config) {
@@ -2146,11 +2146,11 @@ class NetgearProAvSwitchCardEditor extends HTMLElement {
   }
 }
 
-customElements.define("netgear-proav-switch-card-v3-editor", NetgearProAvSwitchCardEditor);
+customElements.define("netgear-proav-switch-card-editor", NetgearProAvSwitchCardEditor);
 
 window.customCards = window.customCards || [];
 window.customCards.push({
-  type: "netgear-proav-switch-card-v3",
+  type: "netgear-proav-switch-card",
   name: "NETGEAR Pro AV Switch Card",
   description: "Visual switch faceplate and per-port controls for multiple NETGEAR Pro AV switches.",
   preview: true,
